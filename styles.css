@@ -1,35 +1,46 @@
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #f4f4f4;
     color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 #game-container {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
 }
 
 h1 {
-    font-size: 2em;
+    color: #2e6a2f;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 button {
+    cursor: pointer;
     background-color: #4CAF50;
     color: white;
-    font-size: 1.2em;
-    padding: 10px 20px;
-    margin: 10px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 button:hover {
     background-color: #45a049;
+}
+
+#story-text, #riddle-text {
+    font-size: 18px;
+    margin-top: 20px;
 }
