@@ -13,9 +13,10 @@
             <p id="story-text">You stand before a tall, rusted iron gate...</p>
         </div>
         <div id="choices">
-            <button onclick="makeChoice(1)">Answer the riddle</button>
-            <button onclick="makeChoice(2)">Leave the garden</button>
-            <button onclick="makeChoice(3)">Ask for a hint</button>
+            <p>Answer the riddle:</p>
+            <p id="riddle-text">I have keys but open no locks. What am I?</p>
+            <input type="text" id="user-answer" placeholder="Type your answer here...">
+            <button onclick="checkAnswer()">Submit Answer</button>
         </div>
     </div>
     <script src="script.js"></script>
