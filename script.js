@@ -1,11 +1,12 @@
 let storyText = document.getElementById("story-text");
+let riddleText = document.getElementById("riddle-text");
 
-function makeChoice(choice) {
-    if (choice === 1) {
+function checkAnswer() {
+    let userAnswer = document.getElementById("user-answer").value.trim().toLowerCase();
+
+    if (userAnswer === "keyboard") {
         storyText.innerHTML = "It's a keyboard! Well done! The garden is open to you...";
-    } else if (choice === 2) {
-        storyText.innerHTML = "You leave the garden, but something about it stays with you...";
-    } else if (choice === 3) {
-        storyText.innerHTML = "The gnome gives you a hint: Think of something in your hands, but not directly touched.";
+    } else {
+        storyText.innerHTML = "That's not the answer. Try again or ask for a hint.";
     }
 }
